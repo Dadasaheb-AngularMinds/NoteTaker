@@ -1,0 +1,136 @@
+.form-box-shadow {
+  box-shadow: inset 2px 3px 16px 8px rgba(223, 8, 8, 0.5);
+}
+
+.text-shadow-text {
+  text-shadow: 3px 2px 6px rgba(255, 254, 255, 0.9);
+}
+
+.single-post {
+  box-shadow: 2px 3px 16px 8px rgba(206, 145, 4, 0),
+    inset 2px 3px 16px 8px rgba(223, 8, 8, 0.5);
+  transition: all ease-in-out 0.5s;
+}
+
+.single-post:hover {
+  background-color: #1d2026;
+  color: #1d2026;
+  transform: scale(1.02);
+  box-shadow: 2px 3px 16px 8px rgba(206, 145, 4, 0.5),
+    inset 2px 3px 16px 8px rgba(223, 8, 8, 0.5);
+}
+
+.a-btn {
+  position: relative;
+  background-color: #fff;
+  color: #fff;
+  text-decoration: none;
+  texttransform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.a-btn:hover {
+  letter-spacing: 0.25em;
+  color: var(--clr);
+  background: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.a-btn:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+.a-btn span {
+  position: relative;
+  z-index: 1;
+}
+.a-btn i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.a-btn i:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.a-btn:hover i:before {
+  width: 20px;
+  left: 20%;
+}
+
+.a-btn i::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #27282c;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+.a-btn:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+/* --------Changeing Button CSS------------ -----------*/
+.changing-btn {
+  position: relative;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  texttransform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.changing-btn::after {
+  position: absolute;
+  background-color: #000;
+  content: "";
+  width: 15px;
+  height: 2px;
+  top: -2px;
+  transform: translateX(-50%) skewX(325deg);
+  left: 20px;
+  transition: all 0.5s;
+}
+.changing-btn::before {
+  position: absolute;
+  background-color: #000;
+  content: "";
+  width: 15px;
+  height: 2px;
+  bottom: -2px;
+  transform: translateX(-50%) skewX(325deg);
+  right: 20px;
+  transition: all 0.5s;
+}
+
+.changing-btn:hover::after {
+  left: 80%;
+}
+.changing-btn:hover::before {
+  right: 80%;
+}
+/* --------Changeing Button CSS ends here ------------ */
